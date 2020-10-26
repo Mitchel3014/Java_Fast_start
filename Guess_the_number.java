@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Guess_the_number {
@@ -20,7 +21,14 @@ public class Guess_the_number {
 
     private static int game_cycle (int range) {
         int k = 0;
+
+        //Вариант генерации чисел №1
         int number = (int) (Math.random() * range);
+
+        //Вариант генерации чисел №2
+        //Random random = new Random();
+        //int number = random.nextInt(range);
+
         System.out.println("Угадайте число от 0 до " + range);
         for (int j = 3; j>0; j--) {
                 System.out.println("Осталось попыток: " +j+ "\nВведите число: ");
